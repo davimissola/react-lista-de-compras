@@ -13,6 +13,8 @@
 .div-cards {
     max-width: 60%;
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -20,6 +22,33 @@
 
 .card {
     background-color: rgb(28, 28, 34);
+    width: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 30px;
     color: white;
-    padding: 20px 10px;
+    font-weight: 400;
+}
+
+.card p {
+    color: rgb(174, 174, 182);
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+.card button {
+    background-color: rgb(98, 122, 84);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    width: 85%;
+    height: 40px;
+    cursor: pointer;
 }

@@ -9,7 +9,7 @@ export function HomeHero({ adicionarProduto }) {
         const novo_produto = {
             'nome': FormData.get('nome'),
             'quantidade': FormData.get('quantidade'),
-            'comprado': FormData.get('comprou'),
+            'comprado': false,
         }
         adicionarProduto(novo_produto)
     }
@@ -31,13 +31,6 @@ export function HomeHero({ adicionarProduto }) {
                     id='quantidade'
                     tipo='number'
                     name='quantidade'
-                />
-                < FormField 
-                    label='Já comprou? Sim/Não'
-                    placeholder='Digite sim ou não'
-                    id='comprou'
-                    tipo='text'
-                    name='comprou'
                 />
 
                 <button type='submit'>Criar produto</button>

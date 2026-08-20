@@ -11,7 +11,6 @@ export function PageHome() {
 
     function adicionarProduto(novo_produto) {
         setProduto(produtos.concat(novo_produto))
-        console.log(produtos)
     }
 
 
