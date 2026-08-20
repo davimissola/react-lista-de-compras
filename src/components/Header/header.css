@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    background-color: rgb(28, 28, 34);
+}
+
+.header .logo {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+    word-spacing: 6px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

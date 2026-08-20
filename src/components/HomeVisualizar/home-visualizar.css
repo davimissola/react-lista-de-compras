@@ -1,0 +1,25 @@
+.section-visualizar {
+    background-color: rgb(241, 241, 245);
+}
+
+.section-visualizar h2 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    color: rgb(28, 28, 34);
+    padding-top: 30px;
+}
+
+.div-cards {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: rgb(28, 28, 34);
+    color: white;
+    padding: 20px 10px;
+}
