@@ -13,14 +13,24 @@ export function PageHome() {
         setProduto(produtos.concat(novo_produto))
     }
 
+    function produtoComprado(i) {
+        const nova_lista_produto = produtos.map((produto, indice) => {
+            if (i == indice){
+                return {...produto, comprado: true}
+            }
+            return produto
+        })
+        setProduto(nova_lista_produto) 
+    }
+
 
     return (
         <>
             <Header />
 
-            <HomeHero adicionarProduto={adicionarProduto} />
+            <HomeHero adicionarProduto={adicionarProduto} idProduto={produtos.length} />
 
-            <HomeVisualizar produtos={produtos} />
+            <HomeVisualizar produtos={produtos} produtoComprado={produtoComprado} />
         </>
     )
 }

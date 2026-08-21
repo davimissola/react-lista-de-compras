@@ -3,10 +3,12 @@ import { FormField } from '../FormField'
 import './home-hero.css'
 
 
-export function HomeHero({ adicionarProduto }) {
+export function HomeHero({ adicionarProduto, idProduto }) {
 
     function enviar( FormData ) {
+        console.log(idProduto)
         const novo_produto = {
+            'id': idProduto,
             'nome': FormData.get('nome'),
             'quantidade': FormData.get('quantidade'),
             'comprado': false,

@@ -11,13 +11,18 @@
 }
 
 .div-cards {
-    max-width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cards-filtrados {
+    max-width: 80%;
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px;    
 }
 
 .card {
@@ -42,7 +47,7 @@
     padding-bottom: 80px;
 }
 
-.card button {
+.button-comprou {
     background-color: rgb(98, 122, 84);
     border-radius: 100px;
     border: none;
@@ -51,4 +56,8 @@
     width: 85%;
     height: 40px;
     cursor: pointer;
+}
+
+.comprado {
+    background-color: rgb(216, 79, 79);
 }
